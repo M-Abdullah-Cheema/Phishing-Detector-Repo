@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PhishGuard Mail Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pg-popup">
+  <header class="pg-popup__header">
+    <img src="icons/icon48.png" alt="" width="28" height="28">
+    <div>
+      <h1>PhishGuard Mail Analyzer</h1>
+      <span id="version" class="pg-muted"></span>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="current-heading">
+      <h2 id="current-heading">Current email</h2>
+      <div id="current"></div>
+    </section>
+
+    <section aria-labelledby="trusted-heading">
+      <h2 id="trusted-heading">Trusted senders</h2>
+      <p class="pg-muted">Warnings are suppressed for these exact addresses.</p>
+      <ul id="trusted" class="pg-trusted"></ul>
+    </section>
+  </main>
+
+  <footer class="pg-popup__footer">
+    All analysis happens locally on your device. Email content is never sent anywhere.
+  </footer>
+
+  <script src="ui.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

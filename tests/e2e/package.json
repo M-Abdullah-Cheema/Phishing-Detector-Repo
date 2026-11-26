@@ -1,0 +1,12 @@
+{
+  "name": "phishguard-e2e",
+  "private": true,
+  "description": "Dev-only smoke test that loads the real extension into Chromium. Not part of the extension itself.",
+  "scripts": {
+    "test": "node smoke.test.js",
+    "demo": "node demo.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

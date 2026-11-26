@@ -1,0 +1,14 @@
+{
+  "name": "phishguard-mail-analyzer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Developer scripts for the PhishGuard Mail Analyzer Chrome extension. The extension itself has no dependencies or build step.",
+  "scripts": {
+    "test": "node tests/run-node.js",
+    "evaluate": "node tests/evaluate-metrics.js",
+    "check-manifest": "node scripts/package.js --check",
+    "package": "node scripts/package.js",
+    "test:e2e": "npm --prefix tests/e2e test",
+    "demo": "npm --prefix tests/e2e run demo"
+  }
+}

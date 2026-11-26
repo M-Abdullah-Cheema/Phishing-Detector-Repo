@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PhishGuard tests</title>
+  <style>
+    body { font-family: "Segoe UI", Roboto, Arial, sans-serif; margin: 24px; color: #212121; }
+    h1 { font-size: 20px; }
+    .summary { font-weight: 700; padding: 8px 12px; border-radius: 6px; display: inline-block; }
+    .summary.pass { background: #edf7ed; color: #1b5e20; }
+    .summary.fail { background: #fdecea; color: #b71c1c; }
+    h2 { font-size: 14px; margin: 18px 0 4px; color: #546e7a; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { padding: 2px 0; font-size: 13px; }
+    .pass-item::before { content: "PASS  "; color: #2e7d32; font-weight: 700; }
+    .fail-item::before { content: "FAIL  "; color: #c62828; font-weight: 700; }
+    .error { display: block; margin-left: 48px; color: #b71c1c; font-family: Consolas, monospace; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h1>PhishGuard Mail Analyzer: tests</h1>
+  <div id="summary" class="summary">Running...</div>
+  <div id="results"></div>
+
+  <script src="../analyzer.js"></script>
+  <script src="../providers/gmail.js"></script>
+  <script src="harness.js"></script>
+  <script src="fixtures/emails.js"></script>
+  <script src="analyzer.test.js"></script>
+  <script src="gmail-adapter.test.js"></script>
+  <script src="test-runner.js"></script>
+</body>
+</html>
